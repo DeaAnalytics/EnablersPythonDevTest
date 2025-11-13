@@ -24,12 +24,7 @@ Desarrolla una **CLI en Python** que:
 
 ## Requisitos técnicos
 - Lenguaje: **Python 3.10+**.
-- Librerías permitidas: estándar + `pyyaml`, `pydantic` o equivalentes para validación.
-- El proyecto debe incluir:
-  - `src/` con el código fuente.
-  - `tests/` con las pruebas.
-  - `README.md` explicando cómo ejecutar el proyecto, cómo correr los tests, y qué patrón de diseño se implementó.
-  - `requirements.txt` o `pyproject.toml`.
+
 
 ## Evaluación
 | Criterio | Peso | Descripción |
@@ -44,12 +39,6 @@ Desarrolla una **CLI en Python** que:
 1. Haz **fork** del repositorio.
 2. Implementa tu solución dentro de las carpetas indicadas.
 
-
-## Uso de IA
-Puedes usar herramientas de IA (ChatGPT, Copilot, etc.), pero debes documentar:
-- Qué herramienta utilizaste.
-- Qué prompts o consultas hiciste.
-- En qué partes del código o documentación se aplicó.
 
 ---
 
