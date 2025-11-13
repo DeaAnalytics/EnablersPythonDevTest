@@ -50,6 +50,7 @@ Desarrolla una **CLI en Python** que:
 ## Entrega
 1. Haz **fork** del repositorio.
 2. Implementa tu solución dentro de las carpetas indicadas.
+3. Si tienes alguna duda, envía un correo a osolis@deacero.com
 
 
 ---
