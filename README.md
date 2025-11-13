@@ -6,8 +6,8 @@ Queremos evaluar tu capacidad para construir **scripts en Python** que trabajen 
 ## Objetivo del reto
 Desarrolla una **CLI en Python** que:
 1. **Lea y valide** un archivo `input.yaml` (proporcionado en `sample_data/`).  
-2. **Genere archivos de salida** centrados en un **catálogo de datos** y su **linaje** derivados del YAML de entrada.  
-   - La salida será **YAML o JSONL**, a tu elección.  
+2. **Genere archivos de salida** centrados en un **catálogo de datos** (tablas, columnas, indicadores, tipos, etc.)y su **linaje** (relaciones entre tablas, explores y joins) derivados del YAML de entrada.  
+   - La salida será **YAML o JSONL**, a tu elección (Se esperan al menos dos archivos (catalog.yaml o catalog.json y lineage.yaml o lineage.json). 
    - Debe modelar, como mínimo, **entidades de catálogo** (p. ej., business unit, tablas, columnas, indicadores) y su **linaje** (p. ej., relaciones/joins entre tablas, explores y dependencias).  
    - **Puedes definir los atributos** que consideres adecuados (nombres, tipos, descripciones, tags, calidad/nullable, owners, dominio, etc.), siempre que mantengas consistencia y lo documentes en el README.  
 3. La salida debe conservar coherencia en nombres, estructura y tipos.
@@ -24,16 +24,28 @@ Desarrolla una **CLI en Python** que:
 
 ## Requisitos técnicos
 - Lenguaje: **Python 3.10+**.
+- El proyecto debe incluir:
+  - `src/` con el código fuente.
+  - `tests/` con las pruebas.
+  - `README.md` explicando cómo ejecutar el proyecto, cómo correr los tests, y qué patrón de diseño se implementó.
+  - `requirements.txt`
+
+- **El archivo `README.md` debe incluir:**
+   - Instrucciones para instalar dependencias y ejecutar la CLI.  
+   - Ejemplo de uso (comando y salida esperada).  
+   - Cómo correr las pruebas unitarias (`pytest`, `unittest`, etc.).  
+   - Breve explicación del patrón de diseño implementado y las razones de su elección.    
+ 
 
 
 ## Evaluación
-| Criterio | Peso | Descripción |
-|-----------|------|--------------|
-| Correctitud funcional | 35% | El script procesa correctamente el YAML y genera la salida esperada. |
-| Diseño del código | 25% | Claridad, organización, uso de patrón de diseño. |
-| Pruebas y cobertura | 20% | Pruebas unitarias significativas, cobertura ≥80%. |
-| Documentación | 10% | README claro, explica patrón y pasos de ejecución. |
-| CI/CD (bonus) | 10% | Lint + tests automáticos en GitHub Actions. |
+| Criterio | Descripción |
+|-----------|--------------|
+| Correctitud funcional | El script procesa correctamente el YAML y genera la salida esperada. |
+| Diseño del código | Claridad, organización, uso de patrón de diseño. |
+| Pruebas y cobertura | Pruebas unitarias significativas, cobertura ≥80%. |
+| Documentación | README claro, explica patrón y pasos de ejecución. |
+| CI/CD (bonus) | Lint + tests automáticos en GitHub Actions. |
 
 ## Entrega
 1. Haz **fork** del repositorio.
